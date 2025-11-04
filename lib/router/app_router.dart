@@ -1,11 +1,11 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:ozet_haber/pages/home_page.dart';
-import 'package:ozet_haber/pages/turkiye_news.dart';
-import 'package:ozet_haber/pages/world_news.dart';
+import 'package:ozet_haber/views/home_view.dart';
+import 'package:ozet_haber/views/turkiye_news_view.dart';
+import 'package:ozet_haber/views/world_news_view.dart';
 
 part 'app_router.gr.dart';
 
-@AutoRouterConfig(replaceInRouteName: 'Screen|Page,Route')
+@AutoRouterConfig(replaceInRouteName: 'Screen|View,Route')
 class AppRouter extends RootStackRouter {
   @override
   RouteType get defaultRouteType => RouteType.material();

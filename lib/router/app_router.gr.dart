@@ -11,7 +11,7 @@
 part of 'app_router.dart';
 
 /// generated route for
-/// [HomePage]
+/// [HomeView]
 class HomeRoute extends PageRouteInfo<void> {
   const HomeRoute({List<PageRouteInfo>? children})
     : super(HomeRoute.name, initialChildren: children);
@@ -21,13 +21,13 @@ class HomeRoute extends PageRouteInfo<void> {
   static PageInfo page = PageInfo(
     name,
     builder: (data) {
-      return const HomePage();
+      return const HomeView();
     },
   );
 }
 
 /// generated route for
-/// [TurkiyeNewsPage]
+/// [TurkiyeNewsView]
 class TurkiyeNewsRoute extends PageRouteInfo<void> {
   const TurkiyeNewsRoute({List<PageRouteInfo>? children})
     : super(TurkiyeNewsRoute.name, initialChildren: children);
@@ -37,13 +37,13 @@ class TurkiyeNewsRoute extends PageRouteInfo<void> {
   static PageInfo page = PageInfo(
     name,
     builder: (data) {
-      return const TurkiyeNewsPage();
+      return const TurkiyeNewsView();
     },
   );
 }
 
 /// generated route for
-/// [WorldNewsPage]
+/// [WorldNewsView]
 class WorldNewsRoute extends PageRouteInfo<void> {
   const WorldNewsRoute({List<PageRouteInfo>? children})
     : super(WorldNewsRoute.name, initialChildren: children);
@@ -53,7 +53,7 @@ class WorldNewsRoute extends PageRouteInfo<void> {
   static PageInfo page = PageInfo(
     name,
     builder: (data) {
-      return const WorldNewsPage();
+      return const WorldNewsView();
     },
   );
 }

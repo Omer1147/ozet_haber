@@ -11,8 +11,8 @@ import 'package:ozet_haber/widgets/small_container.dart';
 import 'package:ozet_haber/widgets/small_sized_box.dart';
 
 @RoutePage()
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class HomeView extends StatelessWidget {
+  const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
