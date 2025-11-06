@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:ozet_haber/constants/titles.dart';
 import 'package:ozet_haber/widgets/custom_title.dart';
+import 'package:ozet_haber/widgets/drawer_menu.dart';
 import 'package:ozet_haber/widgets/turkiye_news_row.dart';
 import 'package:ozet_haber/widgets/world_news_row.dart';
 
@@ -13,7 +14,11 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: Center(child: CustomTitle(TitlesConst.homePageTitle))),
+        appBar: AppBar(
+          title: CustomTitle(TitlesConst.homePageTitle),
+          centerTitle: true,
+        ),
+        drawer: DrawerMenu(),
         body: Column(
           children: [
             Expanded(

@@ -18,6 +18,7 @@ class TurkiyeNewsView extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: CustomTitle(TitlesConst.turkiyeTitle),
+          centerTitle: true,
         ),
       
         body: Column(children: [

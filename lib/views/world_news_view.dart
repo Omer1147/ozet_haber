@@ -18,6 +18,7 @@ class WorldNewsView extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: CustomTitle(TitlesConst.worldTitle),
+          centerTitle: true,
         ),
       
         body: Column(children: [
