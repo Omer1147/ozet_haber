@@ -25,35 +25,3 @@ class HomeRoute extends PageRouteInfo<void> {
     },
   );
 }
-
-/// generated route for
-/// [TurkiyeNewsView]
-class TurkiyeNewsRoute extends PageRouteInfo<void> {
-  const TurkiyeNewsRoute({List<PageRouteInfo>? children})
-    : super(TurkiyeNewsRoute.name, initialChildren: children);
-
-  static const String name = 'TurkiyeNewsRoute';
-
-  static PageInfo page = PageInfo(
-    name,
-    builder: (data) {
-      return const TurkiyeNewsView();
-    },
-  );
-}
-
-/// generated route for
-/// [WorldNewsView]
-class WorldNewsRoute extends PageRouteInfo<void> {
-  const WorldNewsRoute({List<PageRouteInfo>? children})
-    : super(WorldNewsRoute.name, initialChildren: children);
-
-  static const String name = 'WorldNewsRoute';
-
-  static PageInfo page = PageInfo(
-    name,
-    builder: (data) {
-      return const WorldNewsView();
-    },
-  );
-}

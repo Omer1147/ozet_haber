@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:ozet_haber/constants/default_images.dart';
-import 'package:ozet_haber/constants/titles.dart';
+import 'package:ozet_haber/constants/images_const.dart';
+import 'package:ozet_haber/constants/titles_const.dart';
 import 'package:ozet_haber/router/app_router.dart';
 
 class DrawerMenu extends StatelessWidget {

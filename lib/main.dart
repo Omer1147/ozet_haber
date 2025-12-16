@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:ozet_haber/constants/colors.dart';
-import 'package:ozet_haber/constants/titles.dart';
+import 'package:ozet_haber/constants/colors_const.dart';
+import 'package:ozet_haber/constants/titles_const.dart';
 import 'package:ozet_haber/router/app_router.dart';
 
 void main() {
