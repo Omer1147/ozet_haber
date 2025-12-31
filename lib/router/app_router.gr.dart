@@ -25,3 +25,19 @@ class HomeRoute extends PageRouteInfo<void> {
     },
   );
 }
+
+/// generated route for
+/// [SettingsView]
+class SettingsRoute extends PageRouteInfo<void> {
+  const SettingsRoute({List<PageRouteInfo>? children})
+    : super(SettingsRoute.name, initialChildren: children);
+
+  static const String name = 'SettingsRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SettingsView();
+    },
+  );
+}

@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:ozet_haber/constants/texts_const.dart';
 import 'package:ozet_haber/env/env.dart';
 import '../models/news_model.dart';
@@ -26,13 +27,21 @@ class TopHeadlinesService {
             .map((json) => NewsModel.fromJson(json as Map<String, dynamic>))
             .toList();
       } else {
-        throw Exception(
-            '${TextsConst.apiRequestFailed} ${response.statusCode}');
+        if(kDebugMode){
+          debugPrint('${TextsConst.apiRequestFailed} ${response.statusCode}');
+        }
+        throw TextsConst.apiRequestFailed;
       }
     } on DioException catch (e) {
-      throw Exception('${TextsConst.networkConnectionError} ${e.message}');
+      if(kDebugMode){
+        debugPrint('${TextsConst.networkConnectionError} ${e.message}');
+      }
+      throw TextsConst.networkConnectionError;
     } catch (e) {
-      throw Exception(TextsConst.aGeneralFetchError);
+      if(kDebugMode){
+        debugPrint(TextsConst.aGeneralFetchError);
+      }
+      throw TextsConst.aGeneralFetchError;
     }
   }
 }

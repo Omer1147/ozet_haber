@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:ozet_haber/constants/titles_const.dart';
 import 'package:ozet_haber/models/news_model.dart';
 import 'package:ozet_haber/services/top_headlines_service.dart';
-import 'package:ozet_haber/widgets/custom_title.dart';
+import 'package:ozet_haber/widgets/appbar_title.dart';
 import 'package:ozet_haber/widgets/drawer_menu.dart';
 import 'package:ozet_haber/widgets/common_view_body.dart';
 
@@ -30,7 +30,7 @@ class _HomeViewState extends State<HomeView> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: CustomTitle(TitlesConst.homePageTitle),
+          title: AppBarTitle(TitlesConst.homeViewTitle),
           centerTitle: true,
         ),
         drawer: DrawerMenu(),
