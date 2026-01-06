@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:ozet_haber/constants/images_const.dart';
 import 'package:ozet_haber/constants/titles_const.dart';
 import 'package:ozet_haber/router/app_router.dart';
+import 'package:ozet_haber/widgets/divider_for_drawer.dart';
 import 'package:ozet_haber/widgets/text/medium_text.dart';
 
 class DrawerMenu extends StatelessWidget {
@@ -35,6 +36,19 @@ class DrawerMenu extends StatelessWidget {
             },
           ),
 
+          DividerForDrawer(),
+
+          ListTile(
+            leading: const Icon(Icons.business_center),
+            title: MediumText(TitlesConst.businessViewTitle),
+            onTap: (){
+              context.router.pop();
+              context.router.replace(BusinessRoute());
+            },
+          ),
+
+          DividerForDrawer(),
+
           ListTile(
             leading: const Icon(Icons.settings),
             title: MediumText(TitlesConst.settingsViewTitle),
@@ -44,6 +58,7 @@ class DrawerMenu extends StatelessWidget {
             },
           )
         ],
-      ),);
+      ),
+    );
   }
 }

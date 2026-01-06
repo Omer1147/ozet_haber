@@ -9,11 +9,11 @@ class NewsImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image.network(
       imageSource,
-      width: 70.w,
-      height: 65.w,
+      width: 90.w,
+      height: 85.w,
       fit: BoxFit.cover,
       errorBuilder: (context, error, stackTrace) =>
-        Icon(Icons.broken_image, size: 70.w),
+        Icon(Icons.broken_image, size: 90.w),
     );
   }
 }

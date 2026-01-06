@@ -50,9 +50,11 @@ class CommonViewBody extends StatelessWidget {
                     return Card(
                       margin: EdgeInsets.symmetric(horizontal: 8.w, vertical: 4.w),
                       child: ListTile(
+                        minVerticalPadding: 10.w,
+                        visualDensity: VisualDensity(vertical: 4),
                         leading: article.urlToImage != null
                             ? NewsImage(article.urlToImage!)
-                            : Icon(Icons.article, size: 70.w),
+                            : Icon(Icons.article, size: 90.w),
                         title: NewsTitleText(article.title),
                         subtitle: NewsSourceText(article.sourceName),
                       ),
