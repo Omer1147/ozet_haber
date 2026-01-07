@@ -47,6 +47,15 @@ class DrawerMenu extends StatelessWidget {
             },
           ),
 
+          ListTile(
+            leading: const Icon(Icons.theater_comedy),
+            title: MediumText(TitlesConst.entertainmentViewTitle),
+            onTap: (){
+              context.router.pop();
+              context.router.replace(EntertainmentRoute());
+            },
+          ),
+
           DividerForDrawer(),
 
           ListTile(

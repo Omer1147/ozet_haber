@@ -27,6 +27,22 @@ class BusinessRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [EntertainmentView]
+class EntertainmentRoute extends PageRouteInfo<void> {
+  const EntertainmentRoute({List<PageRouteInfo>? children})
+    : super(EntertainmentRoute.name, initialChildren: children);
+
+  static const String name = 'EntertainmentRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const EntertainmentView();
+    },
+  );
+}
+
+/// generated route for
 /// [HomeView]
 class HomeRoute extends PageRouteInfo<void> {
   const HomeRoute({List<PageRouteInfo>? children})
