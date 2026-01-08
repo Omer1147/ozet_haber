@@ -8,4 +8,5 @@ final class TitlesConst {
   /// Category View Titles
   static final String businessViewTitle = "İş";
   static final String entertainmentViewTitle = "Eğlence";
+  static final String healthViewTitle = "Sağlık";
 }

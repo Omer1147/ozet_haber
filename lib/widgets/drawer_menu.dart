@@ -56,6 +56,15 @@ class DrawerMenu extends StatelessWidget {
             },
           ),
 
+          ListTile(
+            leading: const Icon(Icons.monitor_heart),
+            title: MediumText(TitlesConst.healthViewTitle),
+            onTap: (){
+              context.router.pop();
+              context.router.replace(HealthRoute());
+            },
+          ),
+
           DividerForDrawer(),
 
           ListTile(

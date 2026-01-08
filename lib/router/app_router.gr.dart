@@ -43,6 +43,22 @@ class EntertainmentRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [HealthView]
+class HealthRoute extends PageRouteInfo<void> {
+  const HealthRoute({List<PageRouteInfo>? children})
+    : super(HealthRoute.name, initialChildren: children);
+
+  static const String name = 'HealthRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const HealthView();
+    },
+  );
+}
+
+/// generated route for
 /// [HomeView]
 class HomeRoute extends PageRouteInfo<void> {
   const HomeRoute({List<PageRouteInfo>? children})
