@@ -4,6 +4,7 @@ import 'package:ozet_haber/views/settings_view.dart';
 import 'package:ozet_haber/views/categories/business_view.dart';
 import 'package:ozet_haber/views/categories/entertainment_view.dart';
 import 'package:ozet_haber/views/categories/health_view.dart';
+import 'package:ozet_haber/views/categories/science_view.dart';
 
 part 'app_router.gr.dart';
 
@@ -18,6 +19,7 @@ class AppRouter extends RootStackRouter {
     AutoRoute(page: SettingsRoute.page),
     AutoRoute(page: BusinessRoute.page),
     AutoRoute(page: EntertainmentRoute.page),
-    AutoRoute(page: HealthRoute.page)
+    AutoRoute(page: HealthRoute.page),
+    AutoRoute(page: ScienceRoute.page)
   ];
 }

@@ -75,6 +75,22 @@ class HomeRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [ScienceView]
+class ScienceRoute extends PageRouteInfo<void> {
+  const ScienceRoute({List<PageRouteInfo>? children})
+    : super(ScienceRoute.name, initialChildren: children);
+
+  static const String name = 'ScienceRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ScienceView();
+    },
+  );
+}
+
+/// generated route for
 /// [SettingsView]
 class SettingsRoute extends PageRouteInfo<void> {
   const SettingsRoute({List<PageRouteInfo>? children})
