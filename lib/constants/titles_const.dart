@@ -10,4 +10,5 @@ final class TitlesConst {
   static final String entertainmentViewTitle = "Eğlence";
   static final String healthViewTitle = "Sağlık";
   static final String scienceViewTitle = "Bilim";
+  static final String sportsViewTitle = "Spor";
 }

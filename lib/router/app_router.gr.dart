@@ -105,3 +105,19 @@ class SettingsRoute extends PageRouteInfo<void> {
     },
   );
 }
+
+/// generated route for
+/// [SportsView]
+class SportsRoute extends PageRouteInfo<void> {
+  const SportsRoute({List<PageRouteInfo>? children})
+    : super(SportsRoute.name, initialChildren: children);
+
+  static const String name = 'SportsRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SportsView();
+    },
+  );
+}

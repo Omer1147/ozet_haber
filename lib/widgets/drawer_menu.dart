@@ -74,6 +74,15 @@ class DrawerMenu extends StatelessWidget {
             },
           ),
 
+          ListTile(
+            leading: const Icon(Icons.sports_basketball),
+            title: MediumText(TitlesConst.sportsViewTitle),
+            onTap: (){
+              context.router.pop();
+              context.router.replace(SportsRoute());
+            },
+          ),
+
           DividerForDrawer(),
 
           ListTile(
