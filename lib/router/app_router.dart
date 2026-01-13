@@ -6,6 +6,7 @@ import 'package:ozet_haber/views/categories/entertainment_view.dart';
 import 'package:ozet_haber/views/categories/health_view.dart';
 import 'package:ozet_haber/views/categories/science_view.dart';
 import 'package:ozet_haber/views/categories/sports_view.dart';
+import 'package:ozet_haber/views/categories/technology_view.dart';
 
 part 'app_router.gr.dart';
 
@@ -23,5 +24,6 @@ class AppRouter extends RootStackRouter {
     AutoRoute(page: HealthRoute.page),
     AutoRoute(page: ScienceRoute.page),
     AutoRoute(page: SportsRoute.page),
+    AutoRoute(page: TechnologyRoute.page),
   ];
 }

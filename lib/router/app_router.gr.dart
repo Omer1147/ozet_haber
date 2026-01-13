@@ -121,3 +121,19 @@ class SportsRoute extends PageRouteInfo<void> {
     },
   );
 }
+
+/// generated route for
+/// [TechnologyView]
+class TechnologyRoute extends PageRouteInfo<void> {
+  const TechnologyRoute({List<PageRouteInfo>? children})
+    : super(TechnologyRoute.name, initialChildren: children);
+
+  static const String name = 'TechnologyRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const TechnologyView();
+    },
+  );
+}

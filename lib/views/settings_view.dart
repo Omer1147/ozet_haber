@@ -41,6 +41,7 @@ class _SettingsViewState extends State<SettingsView> {
             onChanged: (double newValue) {
               fontSizeController.changeFontSize(newValue);
             },
+            divisions: 10,
           )),
           Obx(() => MediumText("${TextsConst.fontSize} ${fontSizeController.baseFontSize.value.toStringAsFixed(1)}")),
         ]),

@@ -83,6 +83,15 @@ class DrawerMenu extends StatelessWidget {
             },
           ),
 
+          ListTile(
+            leading: const Icon(Icons.cell_tower),
+            title: MediumText(TitlesConst.technologyViewTitle),
+            onTap: (){
+              context.router.pop();
+              context.router.replace(TechnologyRoute());
+            },
+          ),
+
           DividerForDrawer(),
 
           ListTile(
