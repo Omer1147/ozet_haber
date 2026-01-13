@@ -1,13 +1,13 @@
 final class TextsConst {
   ///News and service texts
-  static final String unknownSource = "Bilinmeyen kaynak";
-  static final String noNewsAvailable = "Gösterilecek haber bulunamadı.";
-  static final String error = "Hata !";
-  static final String apiRequestFailed = "API isteği başarısız oldu !";
-  static final String networkConnectionError = "Ağ bağlantı hatası !";
-  static final String aGeneralFetchError = "Haberler çekilirken genel bir hata oluştu !";
+  static final String unknownSource = "Unknown source";
+  static final String noNewsAvailable = "No news available.";
+  static final String error = "Error !";
+  static final String apiRequestFailed = "API request failed !";
+  static final String networkConnectionError = "Network connection error !";
+  static final String aGeneralFetchError = "A general error occurred while fetching the news !";
 
   ///Settings texts
-  static final String adjustFontSize = "Yazı Boyutunu Ayarla";
-  static final String fontSize = "Yazı boyutu : ";
+  static final String adjustFontSize = "Adjust Font Size";
+  static final String fontSize = "Font size : ";
 }

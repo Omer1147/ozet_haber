@@ -2,14 +2,14 @@ final class TitlesConst {
   static final String appTitle = "Özet Haber";
   
   /// View Titles
-  static final String homeViewTitle = "Ana Sayfa";
-  static final String settingsViewTitle = "Ayarlar";
+  static final String homeViewTitle = "Home";
+  static final String settingsViewTitle = "Settings";
 
   /// Category View Titles
-  static final String businessViewTitle = "İş";
-  static final String entertainmentViewTitle = "Eğlence";
-  static final String healthViewTitle = "Sağlık";
-  static final String scienceViewTitle = "Bilim";
-  static final String sportsViewTitle = "Spor";
-  static final String technologyViewTitle = "Teknoloji";
+  static final String businessViewTitle = "Business";
+  static final String entertainmentViewTitle = "Entertainment";
+  static final String healthViewTitle = "Health";
+  static final String scienceViewTitle = "Science";
+  static final String sportsViewTitle = "Sports";
+  static final String technologyViewTitle = "Technology";
 }
